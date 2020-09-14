@@ -72,6 +72,10 @@ const rocketChat_inner = () => {
 				max-height: 60px !important;
 			}
 
+			.rc-message-box__typing{
+				top: 55px;
+			}
+
 
 		`;
 
@@ -136,6 +140,10 @@ const rocketChat_inner = () => {
 			}
 
 			.rc-message-box__typing__user{
+				color: white !important;
+			}
+
+			.rc-message-box__typing{
 				color: white !important;
 			}
 			`;
@@ -221,8 +229,5 @@ const betterRocket = () => {
 	
 	
 }
-
-
-
 
 betterRocket()
