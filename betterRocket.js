@@ -134,6 +134,10 @@ const rocketChat_inner = () => {
 			.rc-message-box__container.editing{
 				background-color: #30475e !important;
 			}
+
+			.rc-message-box__typing__user{
+				color: white !important;
+			}
 			`;
 		}
 
