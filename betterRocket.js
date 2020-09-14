@@ -125,6 +125,15 @@ const rocketChat_inner = () => {
 				background-color: rgba(255,255,255, 0.9);
 				color: #333 !important;
 			}
+
+			.message.editing{
+				background-color: #30475e !important;
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+			}
+
+			.rc-message-box__container.editing{
+				background-color: #30475e !important;
+			}
 			`;
 		}
 
