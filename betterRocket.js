@@ -76,11 +76,31 @@ const rocketChat_inner = () => {
 				top: 55px;
 			}
 
+			.message .body{
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column-reverse;
+			}
 
+			.emojione.big {
+				width: 34px;
+				height: 34px;
+			}
 		`;
 
 		if(darkMode){
 			newCSS += `
+
+			
+
+			.attachments__name{
+				color: inherit;
+			}
+
+			.content-background-color{
+				background: #30475e !important;
+			}
+
 			.rc-header__wrap{
 				background: #30475e !important;
 				color: white !important;
@@ -145,6 +165,65 @@ const rocketChat_inner = () => {
 
 			.rc-message-box__typing{
 				color: white !important;
+			}
+
+			.message.new-day::before {
+			    background-color: #fff;
+			    color: gray;
+			    border-radius: 8px;
+			    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			}
+
+			.message .info .is-bot, .message .info .role-tag {
+			    padding: 2px 5px;
+			    border-radius: 8px;
+			    text-transform: capitalize;
+			    background: #30475e;
+			    color: #ddd;
+			    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+			}
+
+			.rc-popover__content{
+				background: #30475e !important;
+				opacity: 0.95 !important;
+			}
+			.emoji-picker .filter-item .category-icon{
+				color: white;
+			}
+			.rc-button--outline {
+			   	border-width: 0;
+			    background: #222831;
+			    color: white;
+			    border-radius: 8px;
+			    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			    transition: all 0.1s cubic-bezier(.17,.67,.96,.59);
+			}
+			.rc-button:not([disabled]):hover {
+			    opacity: 1;
+			    box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 6px 10px rgba(0,0,0,0.23);
+			}
+
+			.rc-user-info-details__info{
+				color:inherit;
+			}
+
+			.rc-user-info-details {
+			    border-width: 0;
+			    background: #222831;
+
+			    border-radius: 8px;
+			    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			    transition: all 0.1s cubic-bezier(.17,.67,.96,.59);
+			    padding: 5px 8px;
+			}
+			.message .reactions > li.selected {
+				background-color: #394271;
+
+			}
+
+			.message .reactions > li {
+				background-color: #373737;
+
 			}
 			`;
 		}
@@ -229,5 +308,8 @@ const betterRocket = () => {
 	
 	
 }
+
+
+
 
 betterRocket()
