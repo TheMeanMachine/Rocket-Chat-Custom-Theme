@@ -76,11 +76,13 @@ const rocketChat_inner = () => {
 				top: 55px;
 			}
 
+			/*
 			.message .body{
 				display: flex;
 				flex-wrap: wrap;
 				flex-direction: column-reverse;
 			}
+			*/
 
 			.emojione.big {
 				width: 34px;
