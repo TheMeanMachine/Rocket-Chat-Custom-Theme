@@ -88,6 +88,11 @@ const rocketChat_inner = () => {
 				width: 34px;
 				height: 34px;
 			}
+
+			.emoji.big{
+				width: 150px;
+				height: 150px;
+			}
 		`;
 
 		if(darkMode){
